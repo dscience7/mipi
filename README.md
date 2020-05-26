@@ -28,6 +28,6 @@ plt.show()
 ## To Do
 - [x] Publish initial version
 - [ ] Add lookup of available MIPI data items
-- [ ] Create wrappers for common queiries (let me know what they are)
+- [ ] Create wrappers for common queries (let me know what they are)
 
 
