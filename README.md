@@ -8,11 +8,26 @@ Python package for gathering data from the UK National Grid gas transmission Mar
 ## Usage
 
 ```
-from mipi import Mipi
 import datetime as dt
+from matplotlib import pyplot as plt
+from mipi import Mipi
+
 M = Mipi()
-start = dt.date(2020, 1, 1) end = dt.date(2020, 4, 1)
-demand = M.get_physical_flows(from_date=start, to_date=end)
+start = dt.date(2020,1,1)
+stop = dt.date(2020,4,30)
+df = M.get_physical_flows(start, stop)
+
+df = df.set_index('ApplicableFor')
+df['Value'].plot()
+plt.ylabel('Gas Demand in million cubic metres')
+plt.title('UK NTS Daily Gas Demand')
+plt.show()
 ```
+![NTS Demand](gas_demand.png)
+
+## To Do
+- [x] Publish initial version
+- [ ] Add lookup of available MIPI data items
+- [ ] Create wrappers for common queiries (let me know what they are)
 
 
