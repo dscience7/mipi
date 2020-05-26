@@ -1,5 +1,5 @@
 ## Introduction
-Python package for gathering data from the UK National Grid gas transmission MIPI data portal. 
+Python package for gathering data from the UK National Grid gas transmission Market Information Provision Initiative (MIPI) API. 
 
 ## Installation
 1. Clone repository
