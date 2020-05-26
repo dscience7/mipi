@@ -5,7 +5,7 @@ Python package for gathering data from the UK National Grid gas transmission Mar
 1. Clone repository
 2. Create python environment using requirements.txt
 
-## Useage
+## Usage
 
 ```
 from mipi import Mipi
