@@ -8,7 +8,7 @@ gitapi==1.0.1
 hgapi==1.7.4
 idna==2.9
 isodate==0.6.0
-lxml==4.5.1
+lxml==4.6.5
 numpy==1.18.4
 pandas==1.0.3
 python-dateutil==2.8.1
